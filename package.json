@@ -1,0 +1,32 @@
+{
+  "name": "tatnight",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "nodemon ./src/bin/www"
+  },
+  "dependencies": {
+    "cookie-parser": "^1.4.5",
+    "debug": "~2.6.9",
+    "ejs": "^3.1.6",
+    "express": "^4.16.4",
+    "http-errors": "^1.6.3",
+    "morgan": "^1.10.0",
+    "serverless-http": "^2.7.0"
+  },
+  "description": "frens page",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexQS96/TatTelegram.git"
+  },
+  "keywords": [
+    "tatnight"
+  ],
+  "author": "alexrps96",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlexQS96/TatTelegram/issues"
+  },
+  "homepage": "https://github.com/AlexQS96/TatTelegram#readme"
+}

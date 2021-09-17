@@ -1,0 +1,146 @@
+@import url(letras.css);
+@import url(header.css);
+@import url(main.css);
+@import url(footer.css);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css);
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "prototype";
+    text-decoration:none;
+}
+
+p {
+    font-size: 18px;
+    color: white;
+}
+
+main{
+    margin-top: 50px;
+    flex-grow: 1;
+}
+
+header, main, footer {
+    flex-shrink: 0;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+h1{
+    color: white;
+}
+
+body{
+    background-image: url('/images/backgrounds/logo_linx_page_mobile.png');
+    background-color: rgb(14, 13, 13);
+    background-repeat: no-repeat;
+    display: flex;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    margin:0px;
+    flex:1;
+}
+
+.page_Container {
+    min-height: 100%;
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+/* Scroll bar*/
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    background: #ffffff;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background:#35363A;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(77, 77, 77); 
+}
+
+/* Media Queries */
+
+@media screen and (min-width: 992px)  {
+
+    .optionsDesktop{
+        display: block;
+    }
+
+    .dropdown{
+        display: none;
+    }
+
+    .dayAndTime{
+        display: block;
+        color: azure;
+        margin-right: 20px;
+    }
+
+    .acoPenguin{
+        display: flex;
+        justify-content: flex-start;
+        height:-webkit-fill-available;
+        z-index: -1;
+        position: fixed;
+        bottom: 0;
+        width: 33%;
+    }
+
+    body {
+        background-image: url('/images/backgrounds/logo_linx_page.png');
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+        display: grid;
+        flex-direction: column;
+    }
+
+    .desertPlant{
+        bottom: 12%;
+        height: 17%;
+    }
+
+    #memberTitles{
+        font-size:30px;
+    }
+
+    .gridPage{
+        padding: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .grid_Codpa{
+        gap: 15px;
+    }
+
+    .codpaBanner{
+        height: 35vh;
+    }
+}

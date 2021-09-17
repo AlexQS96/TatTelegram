@@ -1,0 +1,155 @@
+/*Button-Mobile-Start*/
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    transition: all 0.5s ease-out;
+}
+
+#dropdown-content {
+    display: none;
+    position: absolute;
+    overflow: auto;
+    background-color:#044377;
+    border-radius: 0px 0px 5px 5px;
+    min-width: 110px;
+    z-index: -1;
+    right: 0;
+    padding: 14px 8px;
+    top:42px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 30%);
+    /*lo de abajo no sirve*/
+	transition-property: all;
+	transition-duration: 1s;
+  }
+
+#dropdown-content a {
+    color: white;
+    margin-top: 12px;
+    display: flex;
+    justify-content: center;
+    font-style: italic;
+}
+
+#dropdown-content a:hover {
+    font-weight:600;
+    position: relative;
+}
+
+/*Button-Mobile-End*/
+
+/* Date and Time */
+
+.dayAndTime{
+    display: none;
+}
+
+header{
+    z-index: 1;
+}
+
+.navbar {
+    box-shadow: 0 0 25px rgba(0, 0, 0, 1.0); /*sombrita*/
+    height: 50px;
+    display: flex; /*ordena como inline block*/
+    justify-content: space-between;
+    align-items: center;
+    background:#044377;
+}
+
+header .logo{
+    width: 100%;
+    font-size: 20px;
+    margin-left: 10px;
+    /*para centrar todo 3 lineas*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    /**/
+}
+
+.optionsDesktop{
+    display: none;
+    margin-left: 30px;
+}
+
+.optionsDesktop ul{
+    padding: 0;
+}
+
+.optionsDesktop li{
+    text-align: center;
+}
+
+.optionsDesktop a:hover {
+    font-weight: bold;
+}
+
+header a {
+    color: azure;
+    -webkit-tap-highlight-color: transparent;
+}
+
+/*para mover el menu desktop*/
+header nav{
+    flex-grow: 0.70;
+}
+
+header nav ul {
+    display: flex; /* acomodo el menu en horizontal */
+    gap: 20px;
+}
+
+header nav ul li {
+    list-style: none;
+}
+
+/* Boton Hamburguesa */
+
+.menuButtonMobile {
+    transform: scale(0.5);
+    background-color: transparent;
+    outline: none;
+    border-style: none;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+
+.menuButtonMobile .burgerLine{
+    width: 50px;
+    height: 5px;
+    background-color: #ecf0f1;
+    display: block;
+    margin: 8px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.menuButtonMobile:hover{
+    cursor: pointer;
+}
+
+#burgerButton.is-active .burgerLine:nth-child(2){
+    opacity: 0;
+}
+
+#burgerButton.is-active .burgerLine:nth-child(1){
+    -webkit-transform: translateY(13px) rotate(45deg);
+    -ms-transform: translateY(13px) rotate(45deg);
+    -o-transform: translateY(13px) rotate(45deg);
+    transform: translateY(13px) rotate(45deg);
+}
+
+#burgerButton.is-active .burgerLine:nth-child(3){
+    -webkit-transform: translateY(-13px) rotate(-45deg);
+    -ms-transform: translateY(-13px) rotate(-45deg);
+    -o-transform: translateY(-13px) rotate(-45deg);
+    transform: translateY(-13px) rotate(-45deg);
+}
+
+/* Fin Boton Hamburguesa */
