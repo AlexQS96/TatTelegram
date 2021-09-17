@@ -14,6 +14,9 @@
     "morgan": "^1.10.0",
     "serverless-http": "^2.7.0"
   },
+  "engines":{
+    "node":"14.17.1"
+  },
   "description": "frens page",
   "devDependencies": {},
   "repository": {
