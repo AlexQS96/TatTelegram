@@ -7,6 +7,7 @@
     'dataMember';
     grid-template-columns: 100%;
     width: 95%;
+    padding: 20px 0;
     margin: auto;
     align-items: center;
 }
