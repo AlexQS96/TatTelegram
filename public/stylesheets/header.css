@@ -79,7 +79,7 @@
 /* Boton */
 
 .menuButtonMobile {
-    transform: scale(0.6);
+    /* transform: scale(0.6); */
     background-color: transparent;
     outline: none;
     border-style: none;
@@ -89,11 +89,11 @@
 }
 
 .menuButtonMobile .burgerLine{
-    width: 50px;
-    height: 5px;
+    width: 28px;
+    height: 3px;
     background-color: white;
     display: block;
-    margin: 8px auto;
+    margin: 5px auto;
     -webkit-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
@@ -108,17 +108,17 @@
 }
 
 #burgerButton.is-active .burgerLine:nth-child(1){
-    -webkit-transform: translateY(13px) rotate(45deg);
-    -ms-transform: translateY(13px) rotate(45deg);
-    -o-transform: translateY(13px) rotate(45deg);
-    transform: translateY(13px) rotate(45deg);
+    -webkit-transform: translateY(6px) rotate(45deg);
+    -ms-transform: translateY(6px) rotate(45deg);
+    -o-transform: translateY(6px) rotate(45deg);
+    transform: translateY(6px) rotate(45deg);
 }
 
 #burgerButton.is-active .burgerLine:nth-child(3){
-    -webkit-transform: translateY(-13px) rotate(-45deg);
-    -ms-transform: translateY(-13px) rotate(-45deg);
-    -o-transform: translateY(-13px) rotate(-45deg);
-    transform: translateY(-13px) rotate(-45deg);
+    -webkit-transform: translateY(-10px) rotate(-45deg);
+    -ms-transform: translateY(-10px) rotate(-45deg);
+    -o-transform: translateY(-10px) rotate(-45deg);
+    transform: translateY(-10px) rotate(-45deg);
 }
 
 /* Fin Boton Hamburguesa */
