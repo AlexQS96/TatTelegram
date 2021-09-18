@@ -2,17 +2,18 @@
 <html lang="es">
 <%- include('partials/head.ejs') %>
 <body>
-  <div class="page_Container">
-    <%- include('partials/header.ejs') %>
-    <main>
-        <section class="gridPage">
-
-            <% memberData.forEach(element => { %>
-            <article class="member"><a href="/miembros/<%- element.id %>"><img class="avatarCard" src="../images/profileCards/<%- element.image[0] %>" alt="<%- element.name %>"></a></article>
-            <% }) %>
-        </section>
-    </main>
-    <%- include('partials/footer.ejs') %> 
-  </div>
+  <%- include('partials/header.ejs') %>
+  <main class="lynx_BG">
+    <section class="gridPage">
+      <% memberData.forEach(member => { %>
+        <article class="memberCard">
+          <a href="/miembros/<%- member.id %>">
+            <img src="../images/profileCards/<%- member.image[0] %>" alt="<%- member.name %>">
+          </a>
+        </article>
+      <% }) %>
+    </section>
+  </main>
+  <%- include('partials/footer.ejs') %> 
 </body>
 </html>

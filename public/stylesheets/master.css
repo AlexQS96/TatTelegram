@@ -1,63 +1,16 @@
-@import url(letras.css);
 @import url(header.css);
 @import url(main.css);
 @import url(footer.css);
+@import url(member.css);
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css);
-
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: "prototype";
-    text-decoration:none;
+@font-face {
+    font-family:'taringa';
+    src: url("../fonts/taringa.woff2");
 }
 
-p {
-    font-size: 18px;
-    color: white;
-}
-
-main{
-    margin-top: 50px;
-    flex-grow: 1;
-}
-
-header, main, footer {
-    flex-shrink: 0;
-}
-
-header{
-    position: fixed;
-    width: 100%;
-}
-
-html, body {
-    width: 100%;
-    height: 100%;
-}
-
-h1{
-    color: white;
-}
-
-body{
-    background-image: url('/images/backgrounds/logo_linx_page_mobile.png');
-    background-color: rgb(14, 13, 13);
-    background-repeat: no-repeat;
-    display: flex;
-    background-position: center;
-    background-attachment: fixed;
-    background-size: cover;
-    margin:0px;
-    flex:1;
-}
-
-.page_Container {
-    min-height: 100%;
-    min-width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
+@font-face {
+    font-family:'prototype';
+    src: url("../fonts/Prototype.ttf");
 }
 
 /* Scroll bar*/
@@ -83,64 +36,96 @@ body{
     background: rgb(77, 77, 77); 
 }
 
-/* Media Queries */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "prototype";
+    text-decoration:none;
+    -webkit-tap-highlight-color: transparent;
+}
 
-@media screen and (min-width: 992px)  {
+html,
+body{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+}
 
-    .optionsDesktop{
-        display: block;
-    }
+header{
+    position: fixed;
+    width: 100%;
+    top : 0;
+    z-index: 100;
+}
 
-    .dropdown{
-        display: none;
-    }
+main{
+    margin-top: 50px;
+    flex: 1;
+}
 
-    .dayAndTime{
-        display: block;
-        color: azure;
-        margin-right: 20px;
-    }
+/* Decorative Stuff */
 
-    .acoPenguin{
-        display: flex;
-        justify-content: flex-start;
-        height:-webkit-fill-available;
-        z-index: -1;
-        position: fixed;
-        bottom: 0;
-        width: 33%;
-    }
+.lynx_BG{
+    background-image: url('/images/backgrounds/logo_linx_page.png');
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
 
-    body {
-        background-image: url('/images/backgrounds/logo_linx_page.png');
-        background-attachment: fixed;
-        background-position: center;
-        background-size: cover;
-        display: grid;
-        flex-direction: column;
-    }
+.rel_obj{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
 
-    .desertPlant{
-        bottom: 12%;
-        height: 17%;
-    }
+.desertPlant{
+    position: absolute;
+    bottom: 0%;
+    height: 30%;
+    width: 100%;
+}
 
-    #memberTitles{
-        font-size:30px;
-    }
+/* Screen Messages */
 
-    .gridPage{
-        padding: 20px;
-        display: flex;
-        flex-wrap: wrap;
-        gap: 20px;
-    }
+#screenMessage{
+    margin-top: 2rem;
+    color: white;
+    font-size:1.7rem;
+    font-style: italic;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
 
-    .grid_Codpa{
-        gap: 15px;
-    }
+#screenMessage a{
+    margin-top: 0.5rem;
+    color: white;
+}
 
-    .codpaBanner{
-        height: 35vh;
-    }
+#acoIcon:hover::before {
+    transform: rotate(360deg);
+}
+  
+#acoIcon:before {
+    display: inline-block;/* mandatory to be able to use transform */
+    transition: 1s all;
+}
+
+/*-----------------------------------------------------------------*/
+/*---------------------------- Tablet -----------------------------*/
+/*-----------------------------------------------------------------*/
+
+@media screen and (min-width: 481px){
+
+}
+
+/*-----------------------------------------------------------------*/
+/*------------------------------ PC -------------------------------*/
+/*-----------------------------------------------------------------*/
+
+@media screen and (min-width: 769px){
+
 }

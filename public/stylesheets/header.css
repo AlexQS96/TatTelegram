@@ -1,128 +1,97 @@
-/*Button-Mobile-Start*/
-
-.dropdown {
-    position: relative;
-    display: inline-block;
-    transition: all 0.5s ease-out;
-}
-
-#dropdown-content {
-    display: none;
-    position: absolute;
-    overflow: auto;
-    background-color:#044377;
-    border-radius: 0px 0px 5px 5px;
-    min-width: 110px;
-    z-index: -1;
-    right: 0;
-    padding: 14px 8px;
-    top:42px;
-    box-shadow: inset 0 0 10px rgba(0, 0, 0, 30%);
-    /*lo de abajo no sirve*/
-	transition-property: all;
-	transition-duration: 1s;
-  }
-
-#dropdown-content a {
-    color: white;
-    margin-top: 12px;
-    display: flex;
-    justify-content: center;
-    font-style: italic;
-}
-
-#dropdown-content a:hover {
-    font-weight:600;
-    position: relative;
-}
-
-/*Button-Mobile-End*/
-
-/* Date and Time */
-
-.dayAndTime{
-    display: none;
-}
-
-header{
-    z-index: 1;
-}
-
-.navbar {
-    box-shadow: 0 0 25px rgba(0, 0, 0, 1.0); /*sombrita*/
-    height: 50px;
-    display: flex; /*ordena como inline block*/
-    justify-content: space-between;
-    align-items: center;
-    background:#044377;
-}
-
-header .logo{
+.logo{
     width: 100%;
     font-size: 20px;
-    margin-left: 10px;
-    /*para centrar todo 3 lineas*/
+    order: 1;
+}
+
+.navbar{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    text-decoration: none;
-    /**/
+    padding: 0 20px;
+    height: 50px;
+    color: white;
+    background:#044377;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 1.0); /*sombrita*/
+    z-index: 101;
 }
 
-.optionsDesktop{
+.navbar a{
+    color: white;
+    margin: 0 4px;
+}
+
+.nav_Options{
     display: none;
-    margin-left: 30px;
+    flex-grow: 0.9;
+    user-select: none;
 }
 
-.optionsDesktop ul{
-    padding: 0;
+.nav_Options a{
+    border: 3px solid transparent;
 }
 
-.optionsDesktop li{
-    text-align: center;
+#mobile_Active a:hover,
+.nav_Options a:hover{
+    font-weight: 600;
 }
 
-.optionsDesktop a:hover {
-    font-weight: bold;
+.menuButtonMobile{
+    display: block;
+    order: 2;
 }
 
-header a {
-    color: azure;
-    -webkit-tap-highlight-color: transparent;
-}
-
-/*para mover el menu desktop*/
-header nav{
-    flex-grow: 0.70;
-}
-
-header nav ul {
-    display: flex; /* acomodo el menu en horizontal */
-    gap: 20px;
-}
-
-header nav ul li {
-    list-style: none;
+.panel_Opened{
+    overflow: hidden;
 }
 
 /* Boton Hamburguesa */
 
+#mobile_Active{
+    animation: mobileFade 0.5s;
+    display: none;
+    flex-direction: column;
+    padding: 10px 25px;
+    background-color: #044377;
+    gap: 15px;
+    font-size: 20px;
+    width: 100%;
+    height: 100vh;
+    margin-right: 0;
+    margin-left: auto;
+}
+
+#mobile_Active a{
+    color: white;
+}
+
+@keyframes mobileFade {
+    from {
+        opacity: 0; 
+        -webkit-transform: translate3d(100%, 0, 0);
+    }
+    to{
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+    }
+}
+
+/* Boton */
+
 .menuButtonMobile {
-    transform: scale(0.5);
+    transform: scale(0.6);
     background-color: transparent;
     outline: none;
     border-style: none;
     cursor: pointer;
     -webkit-tap-highlight-color: transparent;
     vertical-align: middle;
-    margin-right: 5px;
 }
-
 
 .menuButtonMobile .burgerLine{
     width: 50px;
     height: 5px;
-    background-color: #ecf0f1;
+    background-color: white;
     display: block;
     margin: 8px auto;
     -webkit-transition: all 0.3s ease-in-out;
@@ -153,3 +122,29 @@ header nav ul li {
 }
 
 /* Fin Boton Hamburguesa */
+
+/*-----------------------------------------------------------------*/
+/*---------------------------- Tablet -----------------------------*/
+/*-----------------------------------------------------------------*/
+
+@media screen and (min-width: 481px){
+
+}
+
+/*-----------------------------------------------------------------*/
+/*------------------------------ PC -------------------------------*/
+/*-----------------------------------------------------------------*/
+
+@media screen and (min-width: 769px){
+
+    #mobile_Active,
+    .menuButtonMobile,
+    .mobileMenu{
+        display: none !important;
+    }
+
+    .nav_Options{
+        display: block;
+        order: 2;
+    }
+}

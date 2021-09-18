@@ -1,45 +1,32 @@
 /* Footer Section */
 
 /*Footer*/
-.main-footer {
-    margin-top: 1rem;
-    padding: 15px 15px 10px 15px;
-    /*background-color:rgb(34, 33, 33);*/
-    background: linear-gradient(#202025,#000);
-}
 
-.footer-description{
+.footer_Box {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     text-align: center;
-    bottom: 0;
+    gap: 15px;
+    padding: 15px 15px 10px 15px;
+    background: linear-gradient(#202025,#000);
+    color: white;
 }
 
 /*Content Text - Icons*/
 
-footer p{
-    font-size: 1rem;
-}
-
 #socialIcons {
     display: flex;
-    flex-direction: row;
     justify-content: center;
-    gap: 2rem;
+    gap: 20px;
 }
 
-#socialIcons a{
-    margin-top: 0.5rem;
-    font-size: 2.2rem;
+#socialIcons i{
+    font-size: 35px;
+    color: rgb(216, 216, 216);
+    transition: color .2s;
+}
+
+#socialIcons i:hover{
     color: white;
-    width: fit-content;
-    transition: all 0.5s ease-in;
-    -webkit-tap-highlight-color: transparent;
 }
-
-#socialIcons a:hover{
-    color: grey;
-}
-
-/* Effects */
 

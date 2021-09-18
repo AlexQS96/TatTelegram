@@ -2,26 +2,26 @@
 <html lang="es">
 <%- include('partials/head.ejs') %>
 <body>
-  <div class="page_Container">
-    <%- include('partials/header.ejs') %>
-    <main>
-      <section class="memberSection">
-        <h1 id="memberTitles"><%= memberDisplay.aliasMember %> </h1>
-        <img class="memberCard" alt="" src = "../images/profileCards/<%= memberDisplay.image[0] %>">
+  <%- include('partials/header.ejs') %>
+  <main class="lynx_BG">
+    <section class="member_Box">
+      <section class="member_Pic_Area">
+        <img class="avatarCard" alt="<%= memberDisplay.aliasMember %>" src= "../images/profileCards/<%= memberDisplay.image[0] %>">
+      </section>
+      <section class="data_Box">
         <div id="dataMember">
-          <div>
-            <p>Alias: <%= memberDisplay.name %></p>
-            <p>Ubicación: <%= memberDisplay.ubication %></p>
-            <p>Ocupación: <%= memberDisplay.ocupation %></p>
-            <p>Altura: <%= memberDisplay.heightMember %>cm</p>
-            <p>- Descripcion -</p>
-            <p><%= memberDisplay.description %></p>
-          </div>
+          <p>Usuario: <%= memberDisplay.aliasMember %></p>
+          <p>Alias: <%= memberDisplay.name %></p>
+          <p>Ubicación: <%= memberDisplay.ubication %></p>
+          <p>Ocupación: <%= memberDisplay.ocupation %></p>
+          <p>Altura: <%= memberDisplay.heightMember %>cm</p>
+          <p>- Descripción -</p>
+          <p><%= memberDisplay.description %></p>
         </div>
       </section>
-      <img class="acoPenguin" alt="" src="../images/backgrounds/penguin.png">
-    </main>
-    <%- include('partials/footer.ejs') %> 
-  </div>
+
+    </section>
+  </main>
+  <%- include('partials/footer.ejs') %> 
 </body>
 </html>

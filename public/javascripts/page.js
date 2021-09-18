@@ -1,35 +1,21 @@
-window.onload = displayClock();
-function displayClock(){
-    var display = new Date().toLocaleTimeString([], {timeStyle: 'short'});
-    document.getElementById("time").innerHTML = display;
-    setTimeout(displayClock, 1000); 
-}
-      
-var dt = new Date();
-var date = dt.getDate();
-var month = dt.getMonth();
-var year = dt.getFullYear();
-var monthArr = ["Enero", "Febrero","Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre","Diciembre"];
-month = monthArr[month];
-document.getElementById("date").innerHTML=" - "+date+" de "+month+" del "+year;
-
-
-
-// Boton Burgues
+// Burger Button
 
 function burgerButtonM() {
-    var burger = document.getElementById("burgerButton");
+    let burger = document.getElementById("burgerButton");
     burger.classList.toggle("is-active");
-    var dropdown = document.getElementById("dropdown-content");
-    dropdown.style.display = "block";
+    let dropdown = document.getElementById("mobile_Active");
+    dropdown.style.display = "flex";
+    document.body.classList.add("panel_Opened");
 
     burger.addEventListener('click', function() {
         if(dropdown.style.display === "none"){
-            dropdown.style.display = "block";
+            dropdown.style.display = "flex";
+            document.body.classList.add("panel_Opened");
         }
         else
         {
             dropdown.style.display = "none";
+            document.body.classList.remove("panel_Opened");
         }
     })
 }

@@ -1,0 +1,93 @@
+/* Member Profile */
+
+.member_Box{
+    display: grid;
+    grid-template-areas:
+    'picMember'
+    'dataMember';
+    grid-template-columns: 100%;
+    width: 95%;
+    margin: auto;
+    align-items: center;
+}
+
+.member_Pic_Area{
+    grid-area: picMember;
+    text-align: center;
+    padding: 20px;
+    margin: auto;
+}
+
+.avatarCard{
+    min-width: 220px;
+    width:100%;
+}
+
+.data_Box{
+    grid-area: dataMember;
+    width: 90%;
+    margin: 0 auto;
+}
+
+#dataMember{
+    display: grid;
+    row-gap: 10px;
+    background-color: #1f1f1f;
+    box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    padding: 30px;
+    color: white;
+    margin: 0 auto;
+    height: fit-content;
+    text-align: center;
+    font-size: clamp(.1rem, 5vw + 0.1rem, 1.5rem);
+}
+
+#dataMember pre{
+    white-space: pre-line;
+}
+
+/* Grid Page */
+
+.gridPage{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+    padding: 20px;
+}
+
+.memberCard img{
+    width: 100%;
+    transition: all 1s ease;
+}
+
+.memberCard:hover img{
+    filter: brightness(130%) saturate(130%);
+    transform: scale(1.02);
+}
+
+/*-----------------------------------------------------------------*/
+/*---------------------------- Tablet -----------------------------*/
+/*-----------------------------------------------------------------*/
+
+@media screen and (min-width: 481px){
+
+}
+
+/*-----------------------------------------------------------------*/
+/*------------------------------ PC -------------------------------*/
+/*-----------------------------------------------------------------*/
+
+@media screen and (min-width: 769px){
+
+    .member_Box{
+        grid-template-areas:
+        'picMember dataMember';
+        grid-template-columns: 30% 70%;
+        height: 100%;
+    }
+
+    #dataMember{
+        text-align: left;
+    }
+}
