@@ -153,21 +153,21 @@
 		"id":16,
 		"image":["ferCard.png"],
 		"name":"Fer",
-		"ubication":"?",
-		"ocupation":"?",
-		"heightMember":"?",
+		"ubication":"Argentina",
+		"ocupation":"ay nose",
+		"heightMember":"1.80?",
 		"aliasMember":"@Fernsld",
-		"description":"?"
+		"description":"tiene novia"
 	},
 	{
 		"id":17,
 		"image":["chamaCard.png"],
 		"name":"Chama",
-		"ubication":"?",
-		"ocupation":"?",
-		"heightMember":"?",
+		"ubication":"ay nose",
+		"ocupation":"ay nose",
+		"heightMember":"1.60?",
 		"aliasMember":"@Chama",
-		"description":"?"
+		"description":"ay nose"
 	},
 	{
 		"id":18,
