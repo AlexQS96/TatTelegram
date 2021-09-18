@@ -52,6 +52,7 @@ body{
     width: 100%;
     height: 100vh;
     background-color: black;
+    overflow-y: auto;
 }
 
 header{
@@ -73,6 +74,8 @@ main{
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
+    width: 100%;
+    height: 100%;
 }
 
 .rel_obj{
