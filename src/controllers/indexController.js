@@ -32,5 +32,8 @@ module.exports = {
                 error: "ERROR: El miembre que buscas no existe o escribiste mal el link kpo nos vemos, besitos no homo error edition"
             });
         }
+    },
+    mrx: (req, res) => {
+        res.render('mrx');
     }
 }
