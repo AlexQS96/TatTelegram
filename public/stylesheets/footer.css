@@ -22,11 +22,7 @@
 
 #socialIcons i{
     font-size: 35px;
-    color: rgb(216, 216, 216);
-    transition: color .2s;
-}
-
-#socialIcons i:hover{
     color: white;
 }
+
 

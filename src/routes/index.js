@@ -6,6 +6,6 @@ router.get('/', controller.index);
 router.get('/contacto', controller.contact);
 router.get('/eventos', controller.events);
 router.get('/miembros', controller.members);
-router.get('/miembros/:id', controller.member);
+router.get('/miembros/:member', controller.member);
 
 module.exports = router;

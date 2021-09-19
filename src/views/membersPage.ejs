@@ -3,11 +3,11 @@
 <%- include('partials/head.ejs') %>
 <body>
   <%- include('partials/header.ejs') %>
-  <main class="lynx_BG">
+  <main>
     <section class="gridPage">
       <% memberData.forEach(member => { %>
         <article class="memberCard">
-          <a href="/miembros/<%- member.id %>">
+          <a href="/miembros/<%- member.username.toLowerCase() %>">
             <img src="../images/profileCards/<%- member.image[0] %>" alt="<%- member.name %>">
           </a>
         </article>

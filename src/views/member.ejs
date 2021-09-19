@@ -3,23 +3,22 @@
 <%- include('partials/head.ejs') %>
 <body>
   <%- include('partials/header.ejs') %>
-  <main class="lynx_BG">
+  <main>
     <section class="member_Box">
       <section class="member_Pic_Area">
-        <img class="avatarCard" alt="<%= memberDisplay.aliasMember %>" src= "../images/profileCards/<%= memberDisplay.image[0] %>">
+        <img class="avatarCard" alt="<%= memberDisplay.username %>" src= "../images/profileCards/<%= memberDisplay.image[0] %>">
       </section>
       <section class="data_Box">
         <div id="dataMember">
-          <p>Usuario: <%= memberDisplay.aliasMember %></p>
+          <p>Usuario: <%= memberDisplay.username %></p>
           <p>Alias: <%= memberDisplay.name %></p>
-          <p>Ubicación: <%= memberDisplay.ubication %></p>
-          <p>Ocupación: <%= memberDisplay.ocupation %></p>
-          <p>Altura: <%= memberDisplay.heightMember %>cm</p>
+          <p>Ubicación: <%= memberDisplay.location %></p>
+          <p>Ocupación: <%= memberDisplay.occupation %></p>
+          <p>Altura: <%= memberDisplay.height %>cm</p>
           <p>- Descripción -</p>
-          <p><%= memberDisplay.description %></p>
+          <p><%= memberDisplay.about %></p>
         </div>
       </section>
-
     </section>
   </main>
   <%- include('partials/footer.ejs') %> 

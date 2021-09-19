@@ -16,12 +16,21 @@ module.exports = {
         });
     },
     member: (req, res) => {
-        let memberID = +req.params.id;
+        let memberID = req.params.member.toLowerCase();
 
-        let memberDisplay = memberData.find(memberDisplay => memberDisplay.id === memberID);
+        let memberDisplay = memberData.find(memberDisplay => memberDisplay.username.toLowerCase() === memberID);
 
-        res.render('member',{
-            memberDisplay
-        });
+        if(memberDisplay != undefined)
+        {
+            res.render('member',{
+                memberDisplay
+            });
+        }
+        else
+        {
+            res.render('error' , {
+                error: "ERROR: El miembre que buscas no existe o escribiste mal el link kpo nos vemos, besitos no homo error edition"
+            });
+        }
     }
 }
