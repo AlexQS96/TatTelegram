@@ -196,5 +196,16 @@
 		"username":"Escuerito",
 		"about":"Dueño del canal de Telegram : 'Momos y otros'.",
 		"customBG":""
-	}
+	},
+	{
+		"id":19,
+		"image":["agustinCard.png"],
+		"name":"Agustin",
+		"location":"Cordoba - Argentina",
+		"occupation":"Estudiante de programación, hobbies: anime, videojuegos",
+		"height":"1.76",
+		"username":"AgusTeam96",
+		"about":"ay nose.",
+		"customBG":""
+	},
 ]
